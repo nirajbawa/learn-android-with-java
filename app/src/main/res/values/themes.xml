@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyCalculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MyCalculator" parent="Base.Theme.MyCalculator" />
+
+    !-- My custom theme for splash screen activity -->
+
+    <style name="Theme.RemoveSplashScreenTheme" parent="Base.Theme.MyCalculator">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.MyCalculator.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyCalculator.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyCalculator.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

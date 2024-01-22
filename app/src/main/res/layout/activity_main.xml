@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="ifContentScrolls"
+    tools:context=".SplashScreen">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:overScrollMode="always"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:scrollbarStyle="insideOverlay"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/calculator_icon"
+                android:src="@drawable/calculator" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/heading"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/num1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/num1"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/num2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/num2"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/add"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="@string/btn1"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:cornerRadius="30dp" />
+
+            <Button
+                android:id="@+id/sub"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/btn2"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:cornerRadius="30dp" />
+
+            <Button
+                android:id="@+id/mul"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/btn3"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:cornerRadius="30dp" />
+
+            <Button
+                android:id="@+id/div"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/btn4"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:cornerRadius="30dp" />
+
+            <TextView
+                android:id="@+id/ans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+
+            <Button
+                android:id="@+id/listeners_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/listeners_page"
+                app:cornerRadius="10dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <Button
+                android:id="@+id/TostsPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/toast_page"
+                app:cornerRadius="10dp" />
+
+
+            <Button
+                android:id="@+id/linearLayoutPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/linear_layout"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+
+            <Button
+                android:id="@+id/relativeLayoutPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/relative_layout"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/constraint_layout"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/frame_layout"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+
+            <Button
+                android:id="@+id/absoluteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/absolute_layout"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/table_layout"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+
+            <Button
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/toolbar"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
