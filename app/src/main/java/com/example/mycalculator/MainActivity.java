@@ -1,6 +1,7 @@
 package com.example.mycalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity  {
         num2 = findViewById(R.id.num2);
         ans = findViewById((R.id.ans));
 
-        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar;
+        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar, intentBtn;
         b1 = findViewById(R.id.add);
         b2 = findViewById(R.id.sub);
         b3 = findViewById(R.id.mul);
@@ -36,7 +37,15 @@ public class MainActivity extends AppCompatActivity  {
         absoluteLayout = findViewById(R.id.absoluteLayout);
         tableLayout = findViewById(R.id.tableLayout);
         toolbar = findViewById(R.id.toolbar);
+        intentBtn = findViewById(R.id.Intent);
 
+        intentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, IntentActivity.class);
+                startActivity(intent);
+            }
+        });
 
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,6 +151,11 @@ public class MainActivity extends AppCompatActivity  {
                 setAnswer(Float.toString(ans));
             }
         });
+
+//        setting the service
+        Intent intent = new Intent(this, ServiceExample.class);
+        ContextCompat.startForegroundService(this, intent);
+
     }
 
     void setAnswer(String ans){

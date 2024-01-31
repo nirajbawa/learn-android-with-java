@@ -56,4 +56,6 @@
     <string name="toolbar">Toolbar</string>
     <string name="relative_layout2">Relative Layout</string>
     <string name="linear_layout2">Linear Layout</string>
+    <string name="intent">Intent</string>
+    <string name="text">Text :</string>
 </resources>
