@@ -203,6 +203,16 @@
                 app:cornerRadius="10dp" />
 
 
+
+            <Button
+                android:id="@+id/csf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/custom_font"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+
         </LinearLayout>
     </ScrollView>
 

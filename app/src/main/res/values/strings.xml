@@ -58,4 +58,8 @@
     <string name="linear_layout2">Linear Layout</string>
     <string name="intent">Intent</string>
     <string name="text">Text :</string>
+    <string name="Hindi" >ऐप डेवलपमेंट हमसे सीखें</string>
+    <string name="urdu" > ہم سے ایپ ڈویلپمنٹ سیکھیں</string>
+    <string name="english" >Learn App Development from us</string>
+    <string name="custom_font">Custom Font</string>
 </resources>

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity  {
         num2 = findViewById(R.id.num2);
         ans = findViewById((R.id.ans));
 
-        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar, intentBtn;
+        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar, intentBtn, csfBtn;
         b1 = findViewById(R.id.add);
         b2 = findViewById(R.id.sub);
         b3 = findViewById(R.id.mul);
@@ -38,6 +38,18 @@ public class MainActivity extends AppCompatActivity  {
         tableLayout = findViewById(R.id.tableLayout);
         toolbar = findViewById(R.id.toolbar);
         intentBtn = findViewById(R.id.Intent);
+        csfBtn = findViewById(R.id.csf);
+
+
+        csfBtn.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this, CustomFonts.class);
+                        startActivity(intent);
+                    }
+                }
+        );
 
         intentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
