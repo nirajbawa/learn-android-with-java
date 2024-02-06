@@ -212,6 +212,57 @@
                 android:layout_marginTop="20dp"
                 app:cornerRadius="10dp" />
 
+            <Button
+                android:id="@+id/Dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/alert_dialog"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/ListViewDemo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/list_view_demo"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+
+            <Button
+                android:id="@+id/CustomListViewDemo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/custom_list_view_demo"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+
+            <Button
+                android:id="@+id/GridViewDemo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/grid_view_demo"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/BasicView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/basic_views"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+
+            <Button
+                android:id="@+id/DateAndTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/date_and_time"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
 
         </LinearLayout>
     </ScrollView>

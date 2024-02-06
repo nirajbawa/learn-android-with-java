@@ -14,6 +14,24 @@
         android:theme="@style/Theme.MyCalculator"
         tools:targetApi="31">
         <activity
+            android:name=".DateAndTime"
+            android:exported="false" />
+        <activity
+            android:name=".BasicViews"
+            android:exported="false" />
+        <activity
+            android:name=".GridViewDemo"
+            android:exported="false" />
+        <activity
+            android:name=".CustomListViewDemo"
+            android:exported="false" />
+        <activity
+            android:name=".ListViewDemo"
+            android:exported="false" />
+        <activity
+            android:name=".AlertDialogDemo"
+            android:exported="false" />
+        <activity
             android:name=".CustomFonts"
             android:exported="false" />
         <activity

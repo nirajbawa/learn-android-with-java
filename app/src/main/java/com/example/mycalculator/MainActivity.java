@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity  {
         num2 = findViewById(R.id.num2);
         ans = findViewById((R.id.ans));
 
-        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar, intentBtn, csfBtn;
+        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar, intentBtn, csfBtn, alertDialog, listViewDemo, CustomListViewDemo, GridViewDemo, basicView, DateAndTime;
         b1 = findViewById(R.id.add);
         b2 = findViewById(R.id.sub);
         b3 = findViewById(R.id.mul);
@@ -39,7 +39,66 @@ public class MainActivity extends AppCompatActivity  {
         toolbar = findViewById(R.id.toolbar);
         intentBtn = findViewById(R.id.Intent);
         csfBtn = findViewById(R.id.csf);
+        alertDialog = findViewById(R.id.Dialog);
+        listViewDemo = findViewById(R.id.ListViewDemo);
+        CustomListViewDemo = findViewById(R.id.CustomListViewDemo);
+        GridViewDemo = findViewById(R.id.GridViewDemo);
+        basicView = findViewById(R.id.BasicView);
+        DateAndTime = findViewById(R.id.DateAndTime);
 
+
+        DateAndTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DateAndTime.class);
+                startActivity(intent);
+            }
+        });
+
+        basicView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, BasicViews.class);
+                startActivity(intent);
+            }
+        });
+
+
+        GridViewDemo.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this, GridViewDemo.class);
+                        startActivity(intent);
+                    }
+                }
+        );
+
+        CustomListViewDemo.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity.this, CustomListViewDemo.class);
+                        startActivity(intent);
+                    }
+                }
+        );
+
+        listViewDemo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListViewDemo.class);
+                startActivity(intent);
+            }
+        });
+
+        alertDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AlertDialogDemo.class);
+                startActivity(intent);
+            }
+        });
 
         csfBtn.setOnClickListener(
                 new View.OnClickListener() {
