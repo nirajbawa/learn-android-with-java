@@ -48,7 +48,6 @@ public class BasicViews extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 RadioButton rBtn = findViewById(i);
-
                 selectedRadio[0] = rBtn.getText().toString();
 
                 Toast.makeText(getApplicationContext(), "selected text : "+ selectedRadio[0], Toast.LENGTH_LONG).show();
