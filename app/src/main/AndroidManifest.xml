@@ -14,6 +14,18 @@
         android:theme="@style/Theme.MyCalculator"
         tools:targetApi="31">
         <activity
+            android:name=".RecyclerStaggeredLayoutManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerGridDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerHorizontalDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewDemoActivity"
+            android:exported="false" />
+        <activity
             android:name=".DateAndTime"
             android:exported="false" />
         <activity

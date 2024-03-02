@@ -264,6 +264,39 @@
                 app:cornerRadius="10dp" />
 
 
+            <Button
+                android:id="@+id/recycleViewBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/recyler_view"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/horiRcBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/horizontal_recycler_view"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/GridRcBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/grid_recycler_view"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+            <Button
+                android:id="@+id/StaggeredRcBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/staggered_recycler_view"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+
         </LinearLayout>
     </ScrollView>
 

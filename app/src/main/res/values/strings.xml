@@ -112,4 +112,8 @@
     </string>
     <string name="basic_views">Basic Views</string>
     <string name="date_and_time">Date And Time</string>
+    <string name="recyler_view">Recyler View</string>
+    <string name="horizontal_recycler_view">Horizontal Recycler view</string>
+    <string name="grid_recycler_view">Grid Recycler View</string>
+    <string name="staggered_recycler_view">Staggered Recycler view</string>
 </resources>

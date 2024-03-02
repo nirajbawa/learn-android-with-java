@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity  {
         num2 = findViewById(R.id.num2);
         ans = findViewById((R.id.ans));
 
-        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar, intentBtn, csfBtn, alertDialog, listViewDemo, CustomListViewDemo, GridViewDemo, basicView, DateAndTime;
+        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar, intentBtn, csfBtn, alertDialog, listViewDemo, CustomListViewDemo, GridViewDemo, basicView, DateAndTime, recycleViewBtn, horizontalRecycleViewBtn, GridRcBtn, StaggeredRcBtn;
         b1 = findViewById(R.id.add);
         b2 = findViewById(R.id.sub);
         b3 = findViewById(R.id.mul);
@@ -45,7 +45,43 @@ public class MainActivity extends AppCompatActivity  {
         GridViewDemo = findViewById(R.id.GridViewDemo);
         basicView = findViewById(R.id.BasicView);
         DateAndTime = findViewById(R.id.DateAndTime);
+        recycleViewBtn = findViewById(R.id.recycleViewBtn);
+        horizontalRecycleViewBtn = findViewById(R.id.horiRcBtn);
+        GridRcBtn = findViewById(R.id.GridRcBtn);
+        StaggeredRcBtn = findViewById(R.id.StaggeredRcBtn);
 
+
+        StaggeredRcBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecyclerStaggeredLayoutManagerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        GridRcBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecyclerGridDemoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        horizontalRecycleViewBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecyclerHorizontalDemoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        recycleViewBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecyclerViewDemoActivity.class);
+                startActivity(intent);
+            }
+        });
 
         DateAndTime.setOnClickListener(new View.OnClickListener() {
             @Override
