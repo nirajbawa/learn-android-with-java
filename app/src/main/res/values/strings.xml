@@ -116,4 +116,6 @@
     <string name="horizontal_recycler_view">Horizontal Recycler view</string>
     <string name="grid_recycler_view">Grid Recycler View</string>
     <string name="staggered_recycler_view">Staggered Recycler view</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

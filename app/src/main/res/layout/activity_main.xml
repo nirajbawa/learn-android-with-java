@@ -297,6 +297,15 @@
                 app:cornerRadius="10dp" />
 
 
+            <Button
+                android:id="@+id/framgentsEx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Fragments"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
+
         </LinearLayout>
     </ScrollView>
 

@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity  {
         num2 = findViewById(R.id.num2);
         ans = findViewById((R.id.ans));
 
-        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar, intentBtn, csfBtn, alertDialog, listViewDemo, CustomListViewDemo, GridViewDemo, basicView, DateAndTime, recycleViewBtn, horizontalRecycleViewBtn, GridRcBtn, StaggeredRcBtn;
+        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar, intentBtn, csfBtn, alertDialog, listViewDemo, CustomListViewDemo, GridViewDemo, basicView, DateAndTime, recycleViewBtn, horizontalRecycleViewBtn, GridRcBtn, StaggeredRcBtn, framgentsEx;
         b1 = findViewById(R.id.add);
         b2 = findViewById(R.id.sub);
         b3 = findViewById(R.id.mul);
@@ -49,7 +49,17 @@ public class MainActivity extends AppCompatActivity  {
         horizontalRecycleViewBtn = findViewById(R.id.horiRcBtn);
         GridRcBtn = findViewById(R.id.GridRcBtn);
         StaggeredRcBtn = findViewById(R.id.StaggeredRcBtn);
+        framgentsEx = findViewById(R.id.framgentsEx);
 
+
+
+        framgentsEx.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
+                startActivity(intent);
+            }
+        });
 
         StaggeredRcBtn.setOnClickListener(new View.OnClickListener(){
             @Override
