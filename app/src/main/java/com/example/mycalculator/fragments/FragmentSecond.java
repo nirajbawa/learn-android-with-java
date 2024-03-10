@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.mycalculator.R;
 
-public class FragmentSecond extends Fragment {
+public class FragmentSecond extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
