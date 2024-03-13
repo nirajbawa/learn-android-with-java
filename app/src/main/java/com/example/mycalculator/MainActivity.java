@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity  {
         num2 = findViewById(R.id.num2);
         ans = findViewById((R.id.ans));
 
-        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar, intentBtn, csfBtn, alertDialog, listViewDemo, CustomListViewDemo, GridViewDemo, basicView, DateAndTime, recycleViewBtn, horizontalRecycleViewBtn, GridRcBtn, StaggeredRcBtn, framgentsEx, tabLayout, sharedPreferences, bottomNavigationActivity;
+        Button b1, b2, b3, b4, nextPage, tostsPage, linearLayoutPage, relativeLayoutPage, constraintLayout, frameLayout, absoluteLayout, tableLayout, toolbar, intentBtn, csfBtn, alertDialog, listViewDemo, CustomListViewDemo, GridViewDemo, basicView, DateAndTime, recycleViewBtn, horizontalRecycleViewBtn, GridRcBtn, StaggeredRcBtn, framgentsEx, tabLayout, sharedPreferences, bottomNavigationActivity, contentProvideDemo;
         b1 = findViewById(R.id.add);
         b2 = findViewById(R.id.sub);
         b3 = findViewById(R.id.mul);
@@ -53,6 +53,15 @@ public class MainActivity extends AppCompatActivity  {
         tabLayout = findViewById(R.id.tabLayout);
         sharedPreferences = findViewById(R.id.sharedPreferences);
         bottomNavigationActivity = findViewById(R.id.bottomNavigationActivity);
+        contentProvideDemo = findViewById(R.id.contentProvideDemo);
+
+        contentProvideDemo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ContentProvideDemoActivity.class);
+                startActivity(intent);
+            }
+        });
 
         bottomNavigationActivity.setOnClickListener(new View.OnClickListener() {
             @Override
