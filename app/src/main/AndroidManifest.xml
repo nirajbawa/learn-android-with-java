@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="com.nirajbava.androidpractical.READ_PERMISSION" />
     <uses-permission android:name="com.nirajbava.androidpractical.WRITE_PERMISSION" />
-
 
     <application
         android:name=".ChannelClass"
@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCalculator"
         tools:targetApi="31">
+        <activity
+            android:name=".OnlineImageActiivtyDemo"
+            android:exported="false" />
         <activity
             android:name=".ContentProvideDemoActivity"
             android:exported="false" />

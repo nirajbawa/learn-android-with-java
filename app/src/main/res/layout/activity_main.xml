@@ -338,6 +338,15 @@
                 android:layout_marginTop="20dp"
                 app:cornerRadius="10dp" />
 
+
+            <Button
+                android:id="@+id/onlineImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Online Image"
+                android:layout_marginTop="20dp"
+                app:cornerRadius="10dp" />
+
         </LinearLayout>
     </ScrollView>
 
